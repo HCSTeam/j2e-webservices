@@ -20,7 +20,7 @@ public interface CartWebService {
 	@Interceptors({ItemVerifier.class})
 	void addItemToCustomerCart(@WebParam(name = "customer_name") String customerName,
 							   @WebParam(name = "item") Item it)
-			throws UnknownCustomerException, UnknownCustomerException;
+			throws UnknownCustomerException;
 
 	@WebMethod
 	@Interceptors({ItemVerifier.class})

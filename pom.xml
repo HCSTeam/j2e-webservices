@@ -8,6 +8,7 @@
     <artifactId>cart-webservice</artifactId>
     <name>cart-webservice</name>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
 
     <distributionManagement>
@@ -60,6 +61,12 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>entities</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
             <artifactId>cart-kitchen-cashier</artifactId>
